@@ -1,6 +1,3 @@
-"""
-Adapted from: https://github.com/Vision-CAIR/MiniGPT-4/blob/main/demo.py
-"""
 import argparse
 import os
 import random
@@ -52,11 +49,7 @@ def setup_seeds(config):
     cudnn.benchmark = False
     cudnn.deterministic = True
 
-
-# ========================================
-#             Model Initialization
-# ========================================
-
+# Model initialization
 print('Initializing Chat')
 args = parse_args()
 cfg = Config(args)
@@ -71,9 +64,7 @@ vis_processor = registry.get_processor_class(vis_processor_cfg.name).from_config
 chat = Chat(model, vis_processor, device='cuda:{}'.format(args.gpu_id))
 print('Initialization Finished')
 
-# ========================================
-#             Gradio Setting
-# ========================================
+# Gradio setting
 
 def gradio_reset(chat_state, img_list):
     if chat_state is not None:

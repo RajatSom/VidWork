@@ -1,6 +1,3 @@
-"""
-Adapted from: https://github.com/Vision-CAIR/MiniGPT-4/blob/main/demo.py
-"""
 import argparse
 import os
 import random

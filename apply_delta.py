@@ -1,7 +1,3 @@
-"""
-Apply the delta weights on top of a base model.
-Adapted from: https://github.com/lm-sys/FastChat/blob/main/fastchat/model/apply_delta.py.
-"""
 import argparse
 
 import torch
